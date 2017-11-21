@@ -1,7 +1,7 @@
 ## Telegram messenger for Android
 
 [Telegram](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
-This repo contains the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.telegram.messenger).
+This repo contains the official source code for [Telegram App for Android](https://play.google.com/store/apps/details?id=org.mezoo.messenger).
 
 ##Creating your Telegram Application
 
@@ -30,3 +30,23 @@ Import the root folder into your IDE (tested on Android Studio), then run projec
 ### Localization
 
 We moved all translations to https://www.transifex.com/projects/p/telegram/. Please use it.
+
+DO :
+
+Open in Android Studio
+Change BuildVars.java to add api (telegram and hockey)
+Add google-services.json
+In TMessagesProj/build.gradle :
+- change applicationIdSuffix ".beta" to applicationIdSuffix "" (or remove)
+- change defaultConfig.applicationId = "org.mezoo.messenger" to "org.mezoo.messenger"
+- modify
+             dexOptions {
+                 jumboMode = true
+                 javaMaxHeapSize "4g"
+             }
+In Telegram/gradle.properties add : org.gradle.jvmargs=-Xmx4608M
+Change Build Variants to build x86Debug/Release (to launch in emulator else armv7Debug/Release)
+- Launch build
+
+
+optional : refactor package and replace all occurences of "com.telegram" in all files

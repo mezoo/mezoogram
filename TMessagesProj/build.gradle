@@ -29,7 +29,7 @@ android {
     buildToolsVersion '25.0.2'
 
     useLibrary 'org.apache.http.legacy'
-    defaultConfig.applicationId = "org.telegram.messenger"
+    defaultConfig.applicationId = "org.mezoo.messenger"
 
     sourceSets.main.jniLibs.srcDirs = ['./jni/']
 
@@ -41,6 +41,7 @@ android {
 
     dexOptions {
         jumboMode = true
+        javaMaxHeapSize "4g"
     }
 
     compileOptions {
@@ -48,7 +49,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    signingConfigs {
+    /*signingConfigs {
         debug {
             storeFile file("config/release.keystore")
             storePassword RELEASE_STORE_PASSWORD
@@ -64,20 +65,20 @@ android {
             keyPassword RELEASE_KEY_PASSWORD
             v2SigningEnabled false
         }
-    }
+    }*/
 
     buildTypes {
         debug {
             debuggable true
             jniDebuggable true
-            signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
+            //signingConfig signingConfigs.debug
+            applicationIdSuffix ""
         }
 
         release {
             debuggable false
             jniDebuggable false
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -86,7 +87,7 @@ android {
         foss {
             debuggable false
             jniDebuggable false
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
 
