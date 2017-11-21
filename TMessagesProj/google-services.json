@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "275618358027",
+    "firebase_url": "https://mezoogram-f308e.firebaseio.com",
+    "project_id": "mezoogram-f308e",
+    "storage_bucket": "mezoogram-f308e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275618358027:android:612bbc47dacaa38c",
+        "android_client_info": {
+          "package_name": "org.mezoo.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275618358027-nob0t3sbdsrspatq707gsooujes4mrjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJu1BQDO2FgAU80zIDSZJzbNRJFHDlvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275618358027:android:dc022572c167a16c",
+        "android_client_info": {
+          "package_name": "org.mezoo.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275618358027-nob0t3sbdsrspatq707gsooujes4mrjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOJu1BQDO2FgAU80zIDSZJzbNRJFHDlvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
