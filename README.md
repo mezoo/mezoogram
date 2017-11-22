@@ -49,4 +49,5 @@ Change Build Variants to build x86Debug/Release (to launch in emulator else armv
 - Launch build
 
 
-optional : refactor package and replace all occurences of "com.telegram" in all files
+optional : Replacing name package 
+refactor package and replace all occurences of "com.telegram" and "org/telegram/" and "org_telegram_" in all files
